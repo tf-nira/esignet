@@ -74,7 +74,7 @@ export default function L1Biometrics({
     setStatus({ state: states.LOADED, msg: "" });
     const { errorCode } = validateBiometricResponse(biometricResponse);
 
-    const vid = inputFields[0].prefix + loginState["sbi_mosip-vid"] + inputFields[0].postfix;
+    const vid = inputFields[0].prefix + loginState["sbi_mosip-vid"].toLowerCase() + inputFields[0].postfix;
     if (errorCode === null) {
       try {
         await Authenticate(
