@@ -18,6 +18,7 @@ on:
       - tf_nira_dev
       - tf_nira_dev_altcha
       - tf_nira_preprod
+      - tf_nira_prod
 
 jobs:
   build-maven-esignet:
