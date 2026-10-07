@@ -301,7 +301,7 @@ body {
 .error-banner {
   color: #d52929;
   background-color: #faefef;
-  height: 40px;
+  min-height: 40px;
 }
 
 .error-banner-text {
